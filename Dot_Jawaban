@@ -1,0 +1,32 @@
+<?php
+//Employee
+   class Employee{
+    //property
+    private $nama;
+    private $title;
+    private $salary;
+
+    public function __construct($nama,$title,$salary) {
+      $this->nama = $nama;
+      $this->title = $title;
+      $this->salary = $salary;
+    }
+    public function getEmployeeName() {
+      return $this->nama;
+    }
+    public function getEmployeeTittle() {
+      return $this->title;
+    }
+    public function getEmployeeMonthlySalary() {
+      return $this->salary;
+    }
+    public function getEmployeeProfile(){
+      echo "Nama".$this->nama."Title".$this->title."Salary".$this->salary;
+   }
+}
+
+    $info = new Employee("Bony Yudha S", "Sarjana Komputer","Rp.6.000.000");
+    $info->getEmployeeProfile();
+   
+  
+?>
